@@ -1,0 +1,26 @@
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 20px; 
+  table-layout: fixed; /* força largura fixa das colunas */
+}
+
+th, td { 
+  border: 1px solid #ddd; 
+  padding: 6px 8px; /* padding menor para linhas mais compactas */
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th { 
+  background: #007bff; 
+  color: #fff; 
+}
+
+th:nth-child(1), td:nth-child(1) { width: 10%; } /* NF */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* Valor */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* Data Emissão */
+th:nth-child(4), td:nth-child(4) { width: 40%; } /* Ocorrência */
+th:nth-child(5), td:nth-child(5) { width: 20%; } /* Ações */
