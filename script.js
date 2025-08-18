@@ -30,6 +30,23 @@ btnFechar.addEventListener('click', () => {
   editId = null;
 });
 
+const nfPesquisa = document.getElementById('nfPesquisa');
+
+nfPesquisa.addEventListener('input', () => {
+  const filtro = nfPesquisa.value.trim().toLowerCase();
+  const linhas = document.querySelectorAll('#tabelaNF tbody tr');
+
+  linhas.forEach(linha => {
+    const numero = linha.children[0].textContent.toLowerCase();
+    if (numero.includes(filtro)) {
+      linha.style.display = '';
+    } else {
+      linha.style.display = 'none';
+    }
+  });
+});
+
+
 // Converter valor brasileiro para float
 function parseValor(valorStr) {
   return parseFloat(valorStr.replace(/\./g, '').replace(',', '.'));
