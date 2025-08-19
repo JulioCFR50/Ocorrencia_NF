@@ -3,81 +3,52 @@
 
 /* ===== BODY ===== */
 body {
-	font-family: 'Roboto', sans-serif;
-	/* Fonte do site */
-	margin: 0;
-	/* Remove margem padrão */
-	padding: 0;
-	/* Remove padding padrão */
-	background-image: url('coqueiral.png');
-	/* Imagem de fundo */
-	background-size: cover;
-	/* Cobre toda a tela proporcionalmente */
-	background-repeat: no-repeat;
-	/* Não repete a imagem */
-	background-position: center;
-	/* Centraliza a imagem */
-	color: #333;
-	/* Cor padrão do texto */
-	height: 100vh;
-	/* Altura total da tela */
-	overflow: hidden;
-	/* Remove scroll da página */
+	font-family: 'Roboto', sans-serif;/* Fonte do site */
+	margin: 0;	/* Remove margem padrão */
+	padding: 0;	/* Remove padding padrão */
+	background-image: url('coqueiral.png');	/* Imagem de fundo */
+	background-size: cover;	/* Cobre toda a tela proporcionalmente */
+	background-repeat: no-repeat;	/* Não repete a imagem */
+	background-position: center;	/* Centraliza a imagem */
+	color: #333;	/* Cor padrão do texto */
+	height: 100vh;	/* Altura total da tela */
+	overflow: hidden;	/* Remove scroll da página */
 }
 
 /* ===== CONTAINER CENTRAL ===== */
 .container {
-	position: absolute;
-	/* Fixa o container na tela */
-	top: 10px;
-	/* Distância do topo da tela */
-	bottom: 10px;
-	/* Distância do fundo da tela */
-	left: 5px;
-	/* Distância da esquerda */
-	right: 5px;
-	/* Distância da direita */
-	border-radius: 4px;
-	/* Bordas levemente arredondadas */
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	/* Sombra leve */
-	display: flex;
-	/* Flexbox para organizar conteúdo */
-	flex-direction: column;
-	/* Alinha itens em coluna */
-	padding: 0;
-	/* Sem padding interno */
+	position: absolute;	/* Fixa o container na tela */
+	top: 10px;	/* Distância do topo da tela */
+	bottom: 10px;	/* Distância do fundo da tela */
+	left: 5px;	/* Distância da esquerda */
+	right: 5px;	/* Distância da direita */
+	border-radius: 4px;	/* Bordas levemente arredondadas */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);	/* Sombra leve */
+	display: flex;	/* Flexbox para organizar conteúdo */
+	flex-direction: column;	/* Alinha itens em coluna */
+	padding: 0;	/* Sem padding interno */
    
 }
 
 /* ===== CABEÇALHO ===== */
 .container-header {
-	display: flex;
-	/* Flex horizontal */
-	justify-content: space-between;
-	/* Título à esquerda, ações à direita */
-	align-items: center;
-	/* Alinha verticalmente ao centro */
-	margin-bottom: 10px;
-	/* Espaço abaixo do header */
+	display: flex;	/* Flex horizontal */
+	justify-content: space-between;	/* Título à esquerda, ações à direita */
+	align-items: center;	/* Alinha verticalmente ao centro */
+	margin-bottom: 10px;	/* Espaço abaixo do header */
 }
 
 /* ===== BLOCO DE AÇÕES (BOTÃO + PESQUISA) ===== */
 .header-actions {
-	display: flex;
-	/* Flex horizontal */
-	gap: 10px;
-	/* Espaço entre botão e input */
-	align-items: center;
-	/* Alinha verticalmente ao centro */
+	display: flex;	/* Flex horizontal */
+	gap: 10px;	/* Espaço entre botão e input */
+	align-items: center;	/* Alinha verticalmente ao centro */
 }
 
 /* ===== TÍTULO ===== */
 .container-header h1 {
-	font-size: 24px;
-	/* Tamanho do título */
-	margin: 0;
-	/* Remove margem padrão do h1 */
+	font-size: 24px;	/* Tamanho do título */
+	margin: 0;	/* Remove margem padrão do h1 */
 }
 
 /* ===== BOTÃO CADASTRAR ===== */
@@ -272,4 +243,23 @@ h2 {
 	color: #f0e408;
 }
 
-/* Título secundário */
+footer {
+    position: fixed;
+    /* Fixa o rodapé na parte inferior */
+    bottom: 0;
+    /* Alinha ao fundo da tela */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Largura total */
+    background-color: #007bff;
+    /* Fundo azul */
+    color: white;
+    /* Texto branco */
+    text-align: center;
+    /* Centraliza texto */
+    padding: 10px 0;
+    /* Espaçamento interno */
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
