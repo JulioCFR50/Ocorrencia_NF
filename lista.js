@@ -14,16 +14,23 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 const nfPesquisa = document.getElementById('nfPesquisa');
+const clientePesquisa = document.getElementById('clientePesquisa');
 
-// Filtro
-nfPesquisa.addEventListener('input', () => {
-  const filtro = nfPesquisa.value.trim().toLowerCase();
+// Filtro por NF e Cliente
+function filtrarTabela() {
+  const nfFiltro = nfPesquisa.value.trim().toLowerCase();
+  const clienteFiltro = clientePesquisa.value.trim().toLowerCase();
   const linhas = document.querySelectorAll('#tabelaNF tbody tr');
+
   linhas.forEach(linha => {
     const numero = linha.children[1].textContent.toLowerCase();
-    linha.style.display = numero.includes(filtro) ? '' : 'none';
+    const cliente = linha.children[4].textContent.toLowerCase();
+    linha.style.display = (numero.includes(nfFiltro) && cliente.includes(clienteFiltro)) ? '' : 'none';
   });
-});
+}
+
+nfPesquisa.addEventListener('input', filtrarTabela);
+clientePesquisa.addEventListener('input', filtrarTabela);
 
 // Formatar data
 function formatDataBR(dataStr) {
@@ -65,6 +72,7 @@ function renderTabela() {
     });
 
     addEventListeners();
+    filtrarTabela(); // aplica filtro automaticamente após renderizar
   });
 }
 
