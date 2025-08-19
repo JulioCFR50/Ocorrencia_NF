@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Notas Fiscais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <div class="container-header">
+    <h1>Lista de Notas Fiscais</h1>
+    <div class="header-actions">
+        <a href="cadastro.html"><button>Cadastrar NF</button></a>
+        <input type="text" id="nfPesquisa" placeholder="Pesquisar NF..." class="campo-pesquisa">
+        </div>
+    </div>
+
+
+    <div class="table-container">
+        <table id="tabelaNF">
+            <thead>
+                <tr>
+                    <th>Transportadora</th>
+                    <th>NF</th>
+                    <th>Valor</th>
+                    <th>Data Emissão</th>
+                    <th>Cliente</th>
+                    <th>UF</th>
+                    <th>Motivo</th>
+                    <th>Ação</th>
+                    <th>NF Entrada</th>
+                    <th>ARM</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados do Firebase -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-footer">
+        <!-- Botões adicionais ou informações fixas -->
+    </div>
+</div>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="lista.js"></script>
+</body>
+</html>

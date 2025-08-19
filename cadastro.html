@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Nota Fiscal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastrar Nota Fiscal</h1>
+        <a href="lista.html"><button>Ver Lista de NFs</button></a>
+        <h2>Cadastro</h2>
+
+        <form id="formCadastro">
+            <input type="text" id="transportadora" placeholder="Transportadora" required>
+            <input type="text" id="numeroNF" placeholder="Número da NF" required>
+            <input type="text" id="valorNF" placeholder="Valor (ex: 1.234,56)" required>
+            <input type="date" id="dataNF" required>
+            <input type="text" id="cliente" placeholder="Cliente" required>
+            <input type="text" id="uf" placeholder="UF" maxlength="2" required>
+            <input type="text" id="motivo" placeholder="Motivo">
+            <input type="text" id="acao" placeholder="Ação">
+            <input type="text" id="nfEntrada" placeholder="NF Entrada">
+            <input type="text" id="arm" placeholder="ARM">
+            <select id="status" required>
+                <option value="">-- Status --</option>
+                <option value="pendente">Pendente</option>
+                <option value="em_andamento">Em andamento</option>
+                <option value="finalizado">Finalizado</option>
+            </select>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>

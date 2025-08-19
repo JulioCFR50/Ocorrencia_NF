@@ -1,5 +1,5 @@
 // Configuração do Firebase
-const firebaseConfig = {
+/*const firebaseConfig = {
   apiKey: "AIzaSyDy-tQkx1vxriO56R4uDG0CP_-qnAf27Xg",
   authDomain: "ocorrencia-nf.firebaseapp.com",
   projectId: "ocorrencia-nf",
@@ -121,3 +121,4 @@ function editarNF(id) {
     })
     .catch(err => console.error(err));
 }
+*/
