@@ -3,244 +3,273 @@
 
 /* ===== BODY ===== */
 body {
-	font-family: 'Roboto', sans-serif;/* Fonte do site */
-	margin: 0;	/* Remove margem padrão */
-	padding: 0;	/* Remove padding padrão */
-	background-image: url('coqueiral.png');	/* Imagem de fundo */
-	background-size: cover;	/* Cobre toda a tela proporcionalmente */
-	background-repeat: no-repeat;	/* Não repete a imagem */
-	background-position: center;	/* Centraliza a imagem */
-	color: #333;	/* Cor padrão do texto */
-	height: 100vh;	/* Altura total da tela */
-	overflow: hidden;	/* Remove scroll da página */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte do site */
+    margin: 0;
+    /* Remove margem padrão */
+    padding: 0;
+    /* Remove padding padrão */
+    background-image: url('coqueiral.png');
+    /* Imagem de fundo */
+    background-size: cover;
+    /* Cobre toda a tela proporcionalmente */
+    background-repeat: no-repeat;
+    /* Não repete a imagem */
+    background-position: center;
+    /* Centraliza a imagem */
+    color: #333;
+    /* Cor padrão do texto */
+    height: 100vh;
+    /* Altura total da tela */
+    overflow: hidden;
+    /* Remove scroll da página */
 }
 
 /* ===== CONTAINER CENTRAL ===== */
 .container {
-	position: absolute;	/* Fixa o container na tela */
-	top: 10px;	/* Distância do topo da tela */
-	bottom: 10px;	/* Distância do fundo da tela */
-	left: 5px;	/* Distância da esquerda */
-	right: 5px;	/* Distância da direita */
-	border-radius: 4px;	/* Bordas levemente arredondadas */
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);	/* Sombra leve */
-	display: flex;	/* Flexbox para organizar conteúdo */
-	flex-direction: column;	/* Alinha itens em coluna */
-	padding: 0;	/* Sem padding interno */
-   
+    position: absolute;
+    /* Fixa o container na tela */
+    top: 10px;
+    /* Distância do topo da tela */
+    bottom: 10px;
+    /* Distância do fundo da tela */
+    left: 5px;
+    /* Distância da esquerda */
+    right: 5px;
+    /* Distância da direita */
+    border-radius: 4px;
+    /* Bordas levemente arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    display: flex;
+    /* Flexbox para organizar conteúdo */
+    flex-direction: column;
+    /* Alinha itens em coluna */
+    padding: 0;
+    /* Sem padding interno */
+
 }
 
 /* ===== CABEÇALHO ===== */
 .container-header {
-	display: flex;	/* Flex horizontal */
-	justify-content: space-between;	/* Título à esquerda, ações à direita */
-	align-items: center;	/* Alinha verticalmente ao centro */
-	margin-bottom: 10px;	/* Espaço abaixo do header */
+    display: flex;
+    /* Flex horizontal */
+    justify-content: space-between;
+    /* Título à esquerda, ações à direita */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    margin-bottom: 10px;
+    /* Espaço abaixo do header */
 }
 
 /* ===== BLOCO DE AÇÕES (BOTÃO + PESQUISA) ===== */
 .header-actions {
-	display: flex;	/* Flex horizontal */
-	gap: 10px;	/* Espaço entre botão e input */
-	align-items: center;	/* Alinha verticalmente ao centro */
+    display: flex;
+    /* Flex horizontal */
+    gap: 10px;
+    /* Espaço entre botão e input */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
 }
 
 /* ===== TÍTULO ===== */
 .container-header h1 {
-	font-size: 24px;	/* Tamanho do título */
-	margin: 0;	/* Remove margem padrão do h1 */
+    font-size: 24px;
+    /* Tamanho do título */
+    margin: 0;
+    /* Remove margem padrão do h1 */
 }
 
 /* ===== BOTÃO CADASTRAR ===== */
 .header-actions button {
-	height: 36px;
-	/* Mesma altura do input */
-	padding: 6px 12px;
-	/* Espaçamento interno */
-	font-size: 12px;
-	/* Tamanho da fonte */
-	border-radius: 6px;
-	/* Bordas arredondadas */
-	border: none;
-	/* Remove borda padrão */
-	background: #007bff;
-	/* Fundo azul */
-	color: #fff;
-	/* Texto branco */
-	cursor: pointer;
-	/* Cursor pointer */
+    height: 36px;
+    /* Mesma altura do input */
+    padding: 6px 12px;
+    /* Espaçamento interno */
+    font-size: 12px;
+    /* Tamanho da fonte */
+    border-radius: 6px;
+    /* Bordas arredondadas */
+    border: none;
+    /* Remove borda padrão */
+    background: #007bff;
+    /* Fundo azul */
+    color: #fff;
+    /* Texto branco */
+    cursor: pointer;
+    /* Cursor pointer */
 }
 
 .header-actions button:hover {
-	background: #6eb0f7;
-	/* Azul claro ao passar o mouse */
+    background: #6eb0f7;
+    /* Azul claro ao passar o mouse */
 }
 
 /* ===== INPUT PESQUISA ===== */
 .header-actions .campo-pesquisa {
-	height: 36px;
-	/* Mesma altura do botão */
-	padding: 6px 10px;
-	/* Espaçamento interno */
-	font-size: 12px;
-	/* Fonte legível */
-	border: 1px solid #ccc;
-	/* Borda cinza */
-	border-radius: 6px;
-	/* Cantos arredondados */
-	box-sizing: border-box;
-	/* Inclui padding na largura total */
+    height: 36px;
+    /* Mesma altura do botão */
+    padding: 6px 10px;
+    /* Espaçamento interno */
+    font-size: 12px;
+    /* Fonte legível */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 6px;
+    /* Cantos arredondados */
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
 }
 
 /* ===== ÁREA DA TABELA ===== */
 .table-container {
-	flex: 1 1 auto;
-	/* Ocupa espaço restante do container */
-	overflow: auto;
-	/* Scroll vertical e horizontal */
-	border: 1px solid #ccc;
-	border-radius: 6px;
-	background: rgba(255, 255, 255, 0.95);
-	/* Fundo semi-transparente */
-	margin: 0;
-	/* Espaço acima e abaixo */
+    flex: 1 1 auto;
+    /* Ocupa espaço restante do container */
+    overflow: auto;
+    /* Scroll vertical e horizontal */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    /* Fundo semi-transparente */
+    margin: 0;
+    /* Espaço acima e abaixo */
 }
 
 
 /* ===== TABELA ===== */
 table {
-	width: max-content;
-	/* Largura conforme colunas */
-	min-width: 100%;
-	/* Ocupa pelo menos a largura do container */
-	border-collapse: collapse;
-	/* Remove espaçamento entre bordas */
+    width: max-content;
+    /* Largura conforme colunas */
+    min-width: 100%;
+    /* Ocupa pelo menos a largura do container */
+    border-collapse: collapse;
+    /* Remove espaçamento entre bordas */
 }
 
 /* ===== CABEÇALHO DA TABELA ===== */
 th {
-	position: sticky;
-	/* Fixa cabeçalho durante rolagem */
-	top: 0;
-	/* Distância do topo da área rolável */
-	background: #007bff;
-	/* Fundo azul */
-	color: #fff;
-	/* Texto branco */
-	z-index: 10;
-	/* Mantém o cabeçalho acima das linhas */
-	padding: 6px 8px;
-	/* Reduz altura da linha */
-	text-align: center;
-	/* Centraliza texto */
-	font-size: 8px;
-	/* Fonte menor */
+    position: sticky;
+    /* Fixa cabeçalho durante rolagem */
+    top: 0;
+    /* Distância do topo da área rolável */
+    background: #007bff;
+    /* Fundo azul */
+    color: #fff;
+    /* Texto branco */
+    z-index: 10;
+    /* Mantém o cabeçalho acima das linhas */
+    padding: 6px 8px;
+    /* Reduz altura da linha */
+    text-align: center;
+    /* Centraliza texto */
+    font-size: 8px;
+    /* Fonte menor */
 }
 
 /* ===== LINHAS DA TABELA ===== */
 td {
-	padding: 2px 4px;
-	/* Altura menor das linhas */
-	text-align: center;
-	/* Centraliza conteúdo */
-	border-bottom: 1px solid #ddd;
-	/* Linha de separação */
-	font-size: 11px;
-	/* Fonte menor */
+    padding: 2px 4px;
+    /* Altura menor das linhas */
+    text-align: center;
+    /* Centraliza conteúdo */
+    border-bottom: 1px solid #ddd;
+    /* Linha de separação */
+    font-size: 11px;
+    /* Fonte menor */
 }
 
 /* ===== BOTÕES DENTRO DA TABELA ===== */
 td button {
-	padding: 2px 4px;
-	/* Botões menores */
-	margin: 1px;
-	/* Espaço entre botões */
-	border-radius: 4px;
-	/* Bordas arredondadas */
-	font-size: 10px;
-	/* Fonte pequena */
+    padding: 2px 4px;
+    /* Botões menores */
+    margin: 1px;
+    /* Espaço entre botões */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    font-size: 10px;
+    /* Fonte pequena */
 }
 
 /* ===== CORES DOS BOTÕES ===== */
 .edit-btn {
-	background: #ffc107;
-	color: #000;
+    background: #ffc107;
+    color: #000;
 }
 
 /* Amarelo: editar */
 .save-btn {
-	background: #28a745;
-	color: #fff;
+    background: #28a745;
+    color: #fff;
 }
 
 /* Verde: salvar */
 .cancel-btn {
-	background: #dc3545;
-	color: #fff;
+    background: #dc3545;
+    color: #fff;
 }
 
 /* Vermelho: cancelar */
 
 /* ===== CAMPO DE PESQUISA ADICIONAL ===== */
 .campo-pesquisa {
-	width: 120px;
-	/* Largura do input */
-	padding: 6px 10px;
-	/* Espaçamento interno */
-	margin: 10px 0;
-	/* Espaçamento acima/abaixo */
-	border: 1px solid #ccc;
-	/* Borda cinza */
-	border-radius: 6px;
-	/* Cantos arredondados */
-	box-sizing: border-box;
-	/* Padding incluso na largura */
+    width: 120px;
+    /* Largura do input */
+    padding: 6px 10px;
+    /* Espaçamento interno */
+    margin: 10px 0;
+    /* Espaçamento acima/abaixo */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 6px;
+    /* Cantos arredondados */
+    box-sizing: border-box;
+    /* Padding incluso na largura */
 }
 
 /* ===== BOTÕES GERAIS ===== */
 button {
-	padding: 6px 12px;
-	/* Tamanho do botão */
-	margin-bottom: 0px;
-	/* Espaço abaixo */
-	border-radius: 6px;
-	/* Bordas arredondadas */
-	cursor: pointer;
-	/* Cursor pointer */
-	border: none;
-	/* Remove borda */
-	background: #007bff;
-	/* Fundo azul */
-	color: #fff;
-	/* Texto branco */
+    padding: 6px 12px;
+    /* Tamanho do botão */
+    margin-bottom: 0px;
+    /* Espaço abaixo */
+    border-radius: 6px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor pointer */
+    border: none;
+    /* Remove borda */
+    background: #007bff;
+    /* Fundo azul */
+    color: #fff;
+    /* Texto branco */
 }
 
 button:hover {
-	background: #6eb0f7;
-	/* Fundo azul claro ao passar o mouse */
+    background: #6eb0f7;
+    /* Fundo azul claro ao passar o mouse */
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
-	.container {
-		padding: 10px;
-		/* Ajusta padding no celular */
-	}
+    .container {
+        padding: 10px;
+        /* Ajusta padding no celular */
+    }
 
-	.campo-pesquisa {
-		width: 100%;
-		/* Pesquisa ocupa toda largura */
-		margin-left: 0;
-		/* Remove margem esquerda */
-	}
+    .campo-pesquisa {
+        width: 100%;
+        /* Pesquisa ocupa toda largura */
+        margin-left: 0;
+        /* Remove margem esquerda */
+    }
 }
 
 
 h2 {
-	font-size: 24px;
-	margin: 0;
-	padding: 0;
-	color: #f0e408;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #f0e408;
 }
 
 footer {

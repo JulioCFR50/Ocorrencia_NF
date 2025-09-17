@@ -1,12 +1,11 @@
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDy-tQkx1vxriO56R4uDG0CP_-qnAf27Xg",
-  authDomain: "ocorrencia-nf.firebaseapp.com",
-  projectId: "ocorrencia-nf",
-  storageBucket: "ocorrencia-nf.firebasestorage.app",
-  messagingSenderId: "1042870457912",
-  appId: "1:1042870457912:web:067f9d68f01b67356ef8cd",
-  measurementId: "G-7Q813QZKSM"
+  apiKey: "AIzaSyDoR3QQQ0wvFP2ri5PY-oErEJyKyuwiFfI",
+  authDomain: "devolucaococo.firebaseapp.com",
+  projectId: "devolucaococo",
+  storageBucket: "devolucaococo.firebasestorage.app",
+  messagingSenderId: "290259039900",
+  appId: "1:290259039900:web:0b8bdc21d89644cbd29f59"
 };
 
 // Inicializa Firebase
